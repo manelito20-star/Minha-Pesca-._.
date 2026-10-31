@@ -3,317 +3,215 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Pesca - O Guia Definitivo para Pescadores</title>
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <title>Minha Pesca - Download APK</title>
     <style>
-        :root {
-            --primary: #0366d6;
-            --primary-hover: #0056b3;
-            --accent: #15803d;
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --text: #334155;
-            --border: #e2e8f0;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: var(--text);
-            background-color: var(--light);
-        }
-
-        header {
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .header-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            font-weight: 800;
-        }
-
-        header h1 span {
-            color: #38bdf8;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
-
-        .btn-download {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background-color: #22c55e;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            box-shadow: 0 4px 15px rgba(34, 197, 94, 0.4);
-            transition: all 0.3s ease;
-        }
-
-        .btn-download:hover {
-            background-color: #16a34a;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(34, 197, 94, 0.6);
-        }
-
-        main {
-            max-width: 1100px;
+            color: #24292e;
+            max-width: 750px;
             margin: 0 auto;
             padding: 40px 20px;
+            background-color: #f6f8fa;
         }
-
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            color: var(--dark);
-            margin: 40px 0 20px 0;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 50px;
-            height: 4px;
-            background-color: var(--primary);
-            border-radius: 2px;
-        }
-
-        /* Galeria de Imagens */
-        .screenshots-container {
-            display: flex;
-            overflow-x: auto;
-            gap: 20px;
-            padding: 20px 10px;
-            scroll-behavior: smooth;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .screenshots-container::-webkit-scrollbar {
-            height: 8px;
-        }
-
-        .screenshots-container::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-
-        .screenshot-card {
-            flex: 0 0 240px;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            background: #fff;
-            border: 1px solid var(--border);
-            transition: transform 0.3s;
-        }
-
-        .screenshot-card:hover {
-            transform: scale(1.03);
-        }
-
-        .screenshot-card img {
-            width: 100%;
-            display: block;
-            height: auto;
-        }
-
-        /* Grid de Funcionalidades */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-
-        .feature-card i {
-            font-size: 2rem;
-            color: var(--primary);
-            margin-bottom: 15px;
-        }
-
-        .feature-card h3 {
-            font-size: 1.3rem;
-            color: var(--dark);
-            margin-bottom: 10px;
-        }
-
-        .feature-card ul {
-            list-style: none;
-        }
-
-        .feature-card ul li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 20px;
-            font-size: 0.95rem;
-        }
-
-        .feature-card ul li::before {
-            content: "•";
-            color: var(--primary);
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        /* Instruções de Uso */
-        .steps-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-        }
-
-        .step-item {
-            display: flex;
-            gap: 20px;
-            align-items: flex-start;
-        }
-
-        .step-number {
-            background-color: var(--primary);
-            color: white;
-            font-weight: bold;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .step-text h4 {
-            color: var(--dark);
-            margin-bottom: 5px;
-        }
-
-        /* Rodapé Apoio e Tecnologias */
-        .grid-footer {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-            background: #e2e8f0;
+        .container {
+            background: #ffffff;
             padding: 40px;
             border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border: 1px solid #e1e4e8;
         }
-
-        .support-box h3, .tech-box h3 {
-            color: var(--dark);
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tech-tag {
-            background-color: white;
-            padding: 6px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            border: 1px solid #cbd5e1;
-        }
-
-        footer {
+        .header {
             text-align: center;
-            padding: 40px 20px;
-            margin-top: 60px;
-            border-top: 1px solid var(--border);
-            font-size: 0.9rem;
-            color: #64748b;
+            margin-bottom: 35px;
         }
-
-        @media (max-width: 600px) {
-            header h1 { font-size: 2rem; }
-            .features-grid { grid-template-columns: 1fr; }
+        h1 {
+            font-size: 2.2em;
+            color: #1f2328;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #57606a;
+            margin-bottom: 25px;
+        }
+        .download-box {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .btn-download {
+            display: inline-block;
+            background-color: #2ea44f;
+            color: white;
+            padding: 14px 32px;
+            font-size: 1.25em;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .btn-download:hover {
+            background-color: #2c974b;
+        }
+        .btn-download:active {
+            transform: scale(0.98);
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #1f2328;
+            border-bottom: 1px solid #d0d7de;
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .note-block {
+            background-color: #fff8c5;
+            padding: 16px;
+            border-radius: 6px;
+            border-left: 4.5px solid #d4a72c;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px 12px;
+            border: 1px solid #d0d7de;
+            text-align: left;
+        }
+        th {
+            background-color: #f6f8fa;
+        }
+        tr:nth-child(even) {
+            background-color: #fcfdfd;
+        }
+        .screenshot-section {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #d0d7de;
+        }
+        .app-screenshot {
+            max-width: 100%;
+            max-height: 550px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            border: 1px solid #d0d7de;
+            margin-top: 15px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <h1>🎣 Minha Pesca</h1>
-            <p>O Guia Definitivo para Pescadores</p>
-            <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px auto; opacity: 0.85;">
-                Uma aplicação móvel moderna desenvolvida em Jetpack Compose para Android, criada para ajudar pescadores amadores e profissionais a planear as suas jornadas com precisão.
-            </p>
-            <a href="https://github.com/manelito20-star/Minha-Pesca-._./releases/download/v1.0/MinhaPesca.apk" class="btn-download">
-                <i class="fa- Tecne-android fab fa-android"></i> Descarregar APK (v1.0)
+    <div class="container">
+        <div class="header">
+            <h1>Minha Pesca 🎣</h1>
+            <p class="subtitle">O Guia Definitivo para Pescadores Amadores e Profissionais! 🌊📱</p>
+        </div>
+
+        <!-- SEÇÃO DE DOWNLOAD -->
+        <div class="download-box">
+            <a href="https://github.com" download class="btn-download">
+                📥 Baixar Minha Pesca (APK v1.0)
             </a>
-        </div>
-    </header>
-
-    <main>
-        <!-- Galeria de Capturas de Ecrã -->
-        <h2 class="section-title">📸 Capturas de Ecrã</h2>
-        <div class="screenshots-container">
-            <div class="screenshot-card"><img src="https://githubusercontent.com" alt="Interface App"></div>
-            <div class="screenshot-card"><img src="https://githubusercontent.com" alt="Interface App"></div>
-            <div class="screenshot-card"><img src="https://githubusercontent.com" alt="Interface App"></div>
-            <div class="screenshot-card"><img src="https://githubusercontent.com" alt="Interface App"></div>
-            <div class="screenshot-card"><img src="https://githubusercontent.com" alt="Interface App"></div>
-            <div class="screenshot-card"><img src="https://githubusercontent.com" alt="Interface App"></div>
-            <div class="screenshot-card"><img src="https://githubusercontent.com" alt="Interface App"></div>
+            <p style="font-size: 0.9em; color: #57606a; margin-top: 10px;">Aplicação móvel moderna para Android desenvolvida em Jetpack Compose</p>
         </div>
 
-        <!-- Funcionalidades Principais -->
-        <h2 class="section-title">🌟 Funcionalidades Principais</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <h3>Mapa Interativo de Pesca</h3>
-                <ul>
-                    <li>Consulta centenas de pesqueiros, rampas e lojas de isco em Portugal pré-carregados.</li>
+        <!-- INTRODUÇÃO -->
+        <p>O <strong>Minha Pesca</strong> é uma aplicação móvel criada para ajudar pescadores a planear as suas jornadas de pesca com precisão e facilidade, reunindo ferramentas meteorológicas e uma base de dados partilhada em tempo real.</p>
+
+        <!-- NOTA INFORMATIVA -->
+        <div class="note-block">
+            <strong>Destaque do Projeto:</strong> Os utilizadores podem partilhar os seus pontos de pesca privados diretamente com a comunidade através de uma base de dados Cloud em tempo real (Firebase Firestore). Inclui um sistema de reporte inteligente que remove automaticamente pontos incorretos após atingirem um limite de denúncias.
+        </div>
+
+        <!-- 🌟 FUNCIONALIDADES -->
+        <h2>🌟 Funcionalidades Principais</h2>
+        <ul>
+            <li><strong>🗺️ Mapa Interativo de Pesca:</strong> Consulta centenas de pesqueiros, rampas de barcos e lojas de isco pré-carregados em Portugal, além de visualização de zonas protegidas e reservas marinhas.</li>
+            <li><strong>🌐 Partilha na Nuvem:</strong> Descobre pontos adicionados por outros pescadores no mapa em tempo real.</li>
+            <li><strong>📍 Gestão de Pontos Privados:</strong> Adiciona os teus próprios pesqueiros (pesqueiro, rampa ou loja), edita ou elimina qualquer ponto local ou predefinido e partilha marcadores via códigos JSON.</li>
+            <li><strong>🚗 Integração de Navegação:</strong> Geração de rotas instantâneas para os pesqueiros através do Waze ou Google Maps.</li>
+            <li><strong>🌊 Marés e Condições:</strong> Informações meteorológicas e marítimas essenciais para a segurança e planeamento.</li>
+            <li><strong>🌙 Fases da Lua:</strong> Calendário lunar integrado para otimizar as tuas capturas.</li>
+            <li><strong>🪢 Nós de Pesca:</strong> Guia visual completo com o passo a passo dos principais nós utilizados.</li>
+            <li><strong>🐟 Espécies e Técnicas:</strong> Enciclopédia digital para conhecer espécies de peixes e montagens recomendadas.</li>
+        </ul>
+
+        <!-- 🚀 COMO COMEÇAR -->
+        <h2>🚀 Como Utilizar</h2>
+        <ol>
+            <li><strong>Explorar o Mapa:</strong> Abre o ecrã do mapa para ver todos os pesqueiros disponíveis. Clicar em qualquer marcador exibe detalhes e rotas via GPS.</li>
+            <li><strong>Adicionar e Partilhar:</strong> Mantém premido qualquer local no mapa para adicionar um ponto privado. Podes publicá-lo na nuvem com um clique.</li>
+            <li><strong>Comunidade:</strong> Ajuda a manter a qualidade da base de dados comunitária avaliando e reportando pontos falsos ou incorretos.</li>
+        </ol>
+
+        <!-- 🛠️ TECNOLOGIAS -->
+        <h2>🛠️ Tecnologias Utilizadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Componente</th>
+                    <th>Tecnologia Base</th>
+                    <th>Função no Projeto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Interface (UI)</td>
+                    <td>Jetpack Compose & Material 3</td>
+                    <td>Design moderno, fluído e adaptável</td>
+                </tr>
+                <tr>
+                    <td>Mapas</td>
+                    <td>Google Maps SDK & Maps Compose</td>
+                    <td>Renderização de marcadores e rotas</td>
+                </tr>
+                <tr>
+                    <td>Base de Dados</td>
+                    <td>Firebase Firestore</td>
+                    <td>Sincronização em tempo real e sistema de reportes</td>
+                </tr>
+                <tr>
+                    <td>Persistência Local</td>
+                    <td>Coroutines & Gson</td>
+                    <td>Processamento em segundo plano e salvamento de ficheiros JSON</td>
+                </tr>
+            </tbody>
+        </tbody>
+        </table>
+
+        <!-- 💡 APOIO -->
+        <div class="note-block" style="background-color: #e3f2fd; border-left-color: #2196f3;">
+            <strong>Apoie o Projeto:</strong> Esta aplicação é totalmente gratuita. Se gostas do projeto e queres apoiar o seu desenvolvimento contínuo, podes efetuar um donativo de 1€ ou enviar sugestões através do formulário interno da app.
+        </div>
+
+        <!-- 📸 CAPTURAS DE ECRÃ (SCREENSHOTS) -->
+        <div class="screenshot-section">
+            <h2>📸 Capturas de Ecrã</h2>
+            <p style="font-size: 0.9em; color: #57606a;">Interface real da aplicação no Android</p>
+            
+            <img src="https://githubusercontent.com" class="app-screenshot" alt="Screenshot 1">
+            <img src="https://githubusercontent.com" class="app-screenshot" alt="Screenshot 2">
+            <img src="https://githubusercontent.com" class="app-screenshot" alt="Screenshot 3">
+            <img src="https://githubusercontent.com" class="app-screenshot" alt="Screenshot 4">
+            <img src="https://githubusercontent.com" class="app-screenshot" alt="Screenshot 5">
+            <img src="https://githubusercontent.com" class="app-screenshot" alt="Screenshot 6">
+            <img src="https://githubusercontent.com" class="app-screenshot" alt="Screenshot 7">
+        </div>
+    </div>
+
+</body>
+</html>
