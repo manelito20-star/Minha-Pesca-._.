@@ -49,3 +49,5 @@ Tem sugestões de melhoria? Utilize o nosso Formulário de Sugestões dentro da 
 
 ---
 Desenvolvido com 🎣 para a comunidade de pescadores.
+
+ATUALIZAÇÃO, v1.1 DISPONIVEL
