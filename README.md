@@ -51,4 +51,5 @@ Tem sugestões de melhoria? Utilize o nosso Formulário de Sugestões dentro da 
 Desenvolvido com 🎣 para a comunidade de pescadores.
 
 ATUALIZAÇÃO, v1.1 (Melhoria na partilha de pontos de pesca e download do ficheiro da comunidade)
+
 ATUALIZAÇÃO, v1.2 DISPONIVEL (Melhoria na estabilidade e atualização instantanea das Marés, Vento e outras informaçoes. Dicas melhoradas para seguirem as atualizaçoes instantaneas das informaçoes gerais)
