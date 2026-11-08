@@ -52,4 +52,5 @@ Desenvolvido com 🎣 para a comunidade de pescadores.
 
 ATUALIZAÇÃO, v2 (Melhoria na partilha de pontos de pesca e download do ficheiro da comunidade)
 
-ATUALIZAÇÃO, v3 DISPONIVEL (Melhoria na estabilidade e atualização instantanea das Marés, Vento e outras informaçoes. Dicas melhoradas para seguirem as atualizaçoes instantaneas das informaçoes gerais, melhoria na camara de identificação de especies)
+ATUALIZAÇÃO, v3 DISPONIVEL (Melhoria na estabilidade e atualização instantanea das Marés, Vento e outras informaçoes. Dicas melhoradas para seguirem as atualizaçoes instantaneas das informaçoes gerais, melhoria na camara de identificação de especies com recurso a serviço externo, apos a foto partilhar com google ou outro serviço de pesquisa externo para melhores resultados (gemini;chatgpt;google, etc))
+
